@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>个人资料</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="author" content="" />
+<link rel="stylesheet" type="text/css" 	href="./css/style.css">
+<script src="./js/jquery-1.8.3.min.js"></script>
+
+</head>
+<body>
+	<div class="user-alter-content">
+	<div class="user-alter-img">
+		<div class="user-alter-top">
+			<div class="user-alert-top_left fl" onclick="javascript:history.back(-1)"></div>
+			<div class="user-alert-top_right fr">保存</div>
+		</div>
+		<div class="user-alert-tu"><i></i><span id="user-img">点击更换图片</span></div>
+	</div>
+	<p class=""><span>个人资料</span></p>	
+  	<ul >
+  		<li >
+  			<label>姓名</label>
+  			<span>王枫</span>
+  		</li>
+  		<li id="user-age">
+  			<label>性别</label>
+  			<a><img src="./images/ion1.png" width="10x" class="fr" alt=""></a> &nbsp;
+  			<span>女</span>
+  		</li>
+  		<li>
+  			<label>账号</label>
+  			<span>888888888888</span>
+  		</li>
+  		<li>
+  			<label>手机号</label>
+  			<span>15384434545</span>
+  		</li >
+  		<li onClick="location.href='address.html'">
+  			<label>城市</label>
+  			<a><img src="./images/ion1.png" width="10x" class="fr" alt=""></a>
+  			<span >郑州</span>
+
+  		</li>
+  		<a href="" class="user-alert-btn">退出登录</a>
+  	</ul>
+  	</div>
+     <ul class="user-alter1 user-alter">
+      <li>拍照</li>
+      <li>从相册选择</li>  
+    </ul>
+     <ul class="user-alter">
+      <li id="man">男</li>
+      <li id="wowan">女</li>
+    </ul>
+</body>
+<script>
+  $("#user-age").toggle(function(){
+  $(".user-alter").css('display','block')
+  $('body').css('background','#7F7F7F');
+  },function(){
+    $(".user-alter").css('display','none')
+  })
+  $('#man').click(function(){
+    $(".user-alter").css('display','none')
+    $('body').css('background','');
+    a=$(this).html()
+     $("#user-age span").html(a);
+
+  })
+  $('#wowan').click(function(){
+    $(".user-alter").css('display','none')
+    $('body').css('background','');
+    a=$(this).html()
+    $("#user-age span").html(a);
+  })
+//
+  $("#user-img").toggle(function(){
+  $(".user-alter1").css('display','block')
+  $('body').css('background','#7F7F7F');
+  },function(){
+    $(".user-alter1").css('display','none')
+  })
+</script>
+</html

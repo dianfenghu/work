@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>账户余额</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="author" content="" />
+<link rel="stylesheet" type="text/css" 	href="./css/style.css">
+<script src="./js/jquery-1.8.3.min.js"></script>
+<style>
+ 
+</style>
+</head>
+<body>
+	<div class="ab-content">
+	<div class="ab-img" onclick="javascript:history.back(-1)"></div>
+  	<ul>
+  		<li>
+  			<div><i><p>我的余额<br>￥339.50</p></i><a href="recharge.html" id="ab-content-c">充值</a><a href="query.html" id="ab-content-j">缴费</a></div>
+  		</li>
+  		<li>
+  			<div><i><p>我的分红<br>￥339.50</p></i><a href=""  class="ab-tx">提取现金</a></div>
+  		</li>
+  		<li>
+  			<div><i><p>我的提成<br>￥339.50</p></i><a href="" id="" class="ab-tx1">提取现金</a></div>
+  		</li>
+  		<li>
+  			<div><i><p>冻结金待充值<br>￥339.50</p></i></div>
+  		</li>
+  		<li>
+  			<div><i><p>我的积分<br>￥339.50</p></i></div>
+  		</li>
+  		
+  	</ul>	
+      <div id="ab-box">
+        <p>您不是会员,请下载APP</p>
+        <a href="" class="ab-esc">取消</a>
+        <a href="" class="ab-ok">确定</a>
+    </div> 
+    <div id="ab-box1">
+        <p>请下载APP</p>
+        <a href="" class="ab-esc">取消</a>
+        <a href="" class="ab-ok">确定</a>
+    </div>
+  	</div>
+</body>
+<script>
+  // one
+  $(".ab-tx").toggle(function(){
+    $("#ab-box").css('display','block')
+    $('body').css('background','#7F7F7F');
+    a=$(".ab-content").find('ul a').attr('href','javascript:void(0)');
+
+  },function(){
+    $("#ab-box").css('display','none')
+  })
+  // er
+  $(".ab-tx1").toggle(function(){
+    $("#ab-box1").css('display','block')
+    $('body').css('background','#7F7F7F');
+    a=$(".ab-content").find('ul a').attr('href','javascript:void(0)');
+
+  },function(){
+    $("#ab-box1").css('display','none')
+  })
+
+</script>
+</html>

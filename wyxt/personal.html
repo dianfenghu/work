@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>个人邀请奖励</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="author" content="" />
+  <link rel="stylesheet" type="text/css" 	href="./css/style.css">
+<script src="./js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+	<div class="personal-conetnt">
+	<div class="personal-img">
+		<div class="personal-top">
+			<div class="personal-top_left fl" onclick="javascript:history.back(-1)"></div>
+			<div class="personal-top_right fr" onClick="location.href='address.html'"><img src="./images/a5.png"  width= "30px"></div>
+		</div>
+		<div class="personal-tu"  onClick="location.href='user.html'">
+			<img src="./images/tu.png" width="70px" style="border-radius:70px;" alt="">
+			<div class="personal-tu_i">
+				<span>王枫</span><br>
+				<i>郑州市</i>
+				<a href="">签&nbsp&nbsp到</a>
+			</div>
+		</div>
+	</div>
+  	<ul>
+  		<li onClick="location.href='account_balance.html'">
+  			<div><img src="./images/u1.png"  class="fl"  alt=""></div>
+  			<label>账户余额</label>
+  			<a href=""><img src="./images/ion1.png" width="10x" class="fr" alt=""></a> &nbsp;
+  		</li>
+  		<li  id="shfw">
+  			<div><img src="./images/u2.png"  class="fl" alt=""></div>
+  			<label>生活服务</label>
+  			<a><img src="./images/ion1.png" width="10x" class="fr" alt=""></a> &nbsp;
+  		</li>
+  		<li  onClick="location.href='invitation_to_reward.html'">
+  			<div><img src="./images/u3.png"  class="fl" alt=""></div>
+  			<label>邀请奖励</label>
+  			<a><img src="./images/ion1.png" width="10x" class="fr" alt=""></a> &nbsp;
+  		</li>
+  		<li  onClick="location.href='membership_rules.html'">
+  			<div><img src="./images/u4.png"  class="fl" alt=""></div>
+  			<label>会员规则</label>
+  			<a><img src="./images/ion1.png" width="10x" class="fr" alt=""></a> &nbsp;
+  		</li>
+  		<li  onClick="location.href='download_app.html'">
+  			<div><img src="./images/u5.png"  class="fl" alt=""></div>
+  			<label>下载APP</label>
+  			<a><img src="./images/ion1.png" width="10x" class="fr" alt=""></a> &nbsp;
+  		</li>
+  		<li  onClick="location.href=''">
+  			<div><img src="./images/can.png"  class="fl" alt=""></div>
+  			<label>扫一扫</label>
+  			<a><img src="./images/ion1.png" width="10x" class="fr" alt=""></a> &nbsp;
+  		</li>
+  	</ul>
+    <p class="zwkf">暂未开放敬请关注</p>
+  	</div>
+    <div class=" personal-body"</div>
+</body>
+<script>
+ $("#shfw").toggle(function(){
+  // alert('aaa');
+  $(".zwkf").css('display','block')
+  $('personal-conetnt').attr('class','personal-body');
+  // a=$(".personal-conetnt").find('ul li').attr('onClick','personal-body');
+
+},function(){
+  $(".shfw").css('display','none')
+})
+</script>
+</html>

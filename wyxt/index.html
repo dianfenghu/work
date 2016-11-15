@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>注册</title>
+	<link rel="stylesheet" type="text/css" 	href="./css/style.css">
+	<script  src="./js/jquery-1.8.3.min.js"></script>
+</head>
+
+<body>
+	<form action="group.html" method="post">
+	<div class="login-top"><i></i><span id="scan">扫一扫</span></div>
+	<div class="login-content">
+		<h2>任性购缴费系统</h2>
+		<li class="login-icons">
+			<label ><img class="login-img" src="images/log_z.png" alt="" width="16px"></label>
+			<input placeholder="手机号/账号" class="login-info-text" type="text" name="user">
+		</li><br>
+		<li >
+			<label><img class="login-img" src="images/log_m.png" alt="" width="19px" ></label>
+			<label><img class="login-imgr" src="images/logmm.png" alt="" width="20px"></label>
+			<input placeholder="请输入密码" id="mm" class="login-info-text" type="password" name="password">
+		</li><br>
+		<div class="">
+			<button id="login-btn" class="dologin">登录</button>
+			<a href="register.html" id="login-btn" class="re">注册</a>
+		</div>
+		<a class="login-a" href="find_pwd.html">忘记密码?</a>
+	</div>
+	</form>
+</body>
+<script>
+	$(function(){
+	$('#mm').keydown(function(){
+		$('.login-imgr').attr('src','images/mm.png')
+	}).blur();
+	$('.dologin').mouseover(function(){
+		$(this).css({'background':'#08C526','color':'#fff'})
+	})
+	$('.re').click(function(){
+		$(this).css({'background':'#08C526','color':'#fff'})
+	})
+	});
+</script>
+</html>

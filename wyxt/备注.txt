@@ -1,0 +1,33 @@
+字体：平方 简 常规体  颜色：4a4a4a 
+
+登录：Login.html
+	登录界面：login.html
+	注册界面：register.html
+	扫一扫注册界面：Register_scan.html
+	设置密码：set_pwd.html
+	找回密码：find_pwd.html
+	输入密码：enter_pwd
+
+分类： group.html
+	缴费与个人：group.html	
+缴费：pay.html
+	查询账号：query_number.html
+	查询：query.html
+	支付页面：Pay.html
+	支付方式：payment_method.html
+	支付完成：complete.html
+	地址：address.html
+
+个人信息:user.html
+	个人信息:	personal.html
+	账户余额：account_balance.html
+	会员卡充值:recharge.html
+	充值确认:Recharge_confirmation.html
+	生活服务：Domestic services.html
+	邀请奖励：invitation_to_reward.html
+		我的二维码：QR_code.html
+		邀请列表：Invitation_list.html
+		我的邀请码：My_invitation_code.html
+	会员规则：membership_rules.html
+	下载APP：download_app.html
+	头像页面：Avatar.html

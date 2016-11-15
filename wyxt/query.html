@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="author" content="" />
+  <link rel="stylesheet" type="text/css"  href="./css/style.css">
+  <script src="./js/jquery-1.8.3.min.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+   <div class="query-log-top" onclick="javascript:history.back(-1)"></div>
+   <div class="query-img"></div>
+  	<ul class="query-content">
+  		<li class="query-info-text">
+  			<label class="pfj">0</label> m<sup>2
+  			<a href="">查询</a>
+  		</li>
+  		<li>
+  			<label>费用</label>
+  			<span>共计：0.00元</span>
+  		</li>
+  		<button class="query-btn" href="pay.html" onClick="location.href='pay.html'">支付</button>
+  	</ul>
+    <form action="" method="post" onsubmit="return func()">
+    <div class="query-content-flaot">
+        <input type="text" name=""  id="pf" autofocus>m<sup>2
+      <input type="submit" value="提交" class="query-btn">
+    </div>
+    </form>
+</body>
+<script>
+
+  $(".query-info-text").click(function(){
+  $(".query-content-flaot").css('display','block')
+  $('body').css('background','#7F7F7F');
+// }
+}).blur(function(){
+  $(".query-content-flaot").css('display','none')
+})
+
+function func(){
+    name=$("#pf").val();
+    $(".query-content-flaot").css('display','none')
+    $('body').css('background','');
+    $(".pfj").html(name);
+    return false;
+}
+
+</script>
+</html>
